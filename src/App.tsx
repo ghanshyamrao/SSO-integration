@@ -6,8 +6,7 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-import { MsalProvider, useMsal } from "@azure/msal-react";
+import { MsalProvider } from "@azure/msal-react";
 import { LogLevel, PublicClientApplication } from "@azure/msal-browser";
 import Login from "./components/Login";
 import UserDetails from "./components/UserDetails";
