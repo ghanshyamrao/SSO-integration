@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* styles.css */
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.login-button--google {
+  background-color: #db4437;
+}
+
+.login-button--google:hover {
+  background-color: #c53829;
+}
+
+.login-button--facebook {
+  background-color: #1877f2;
+}
+
+.login-button--facebook:hover {
+  background-color: #145dbf;
+}
+
+.login-button--twitter {
+  background-color: #1da1f2;
+}
+
+.login-button--twitter:hover {
+  background-color: #0d95e8;
+}
+
+.login-button--microsoft {
+  background-color: #2f2f2f;
+}
+
+.login-button--microsoft:hover {
+  background-color: #1f1f1f;
+}

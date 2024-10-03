@@ -11,6 +11,7 @@ import { LogLevel, PublicClientApplication } from "@azure/msal-browser";
 import Login from "./components/Login";
 import UserDetails from "./components/UserDetails";
 import { User } from "./Types";
+import "./App.css"
 
 const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);

@@ -3,6 +3,8 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import GoogleLoginButton from './GoogleLoginButton';
 import { User } from '../Types';
 import MicrosoftLoginButton from './MicrosoftLogin';
+import FacebookLogin from './facebook';
+import TwitterLogin from './twitter';
 
 const Login: React.FC<{ setUser: React.Dispatch<React.SetStateAction<User | null>> }> = ({ setUser }) => {
   return (
@@ -14,11 +16,13 @@ const Login: React.FC<{ setUser: React.Dispatch<React.SetStateAction<User | null
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="bg-white flex flex-col gap-2 py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID || ''}>
             <GoogleLoginButton setUser={setUser} />
           </GoogleOAuthProvider>
           <MicrosoftLoginButton setUser={setUser} />
+          <FacebookLogin/>
+          <TwitterLogin/>
         </div>
       </div>
     </div>
